@@ -9,6 +9,7 @@
 --color-accent:#404BBF; 
 --color-background-cards:#F4F4FD;
 --color-btn-footer-light:#E7E9FC; 
+--color-accent-soc:#31D0AA; 
 }
  
 p,h1,h2,h3,h4,h5,h6{
@@ -131,14 +132,18 @@ body {
 
 /*----Hero--*/
 .hero {
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--color-background-dark);
-   padding-bottom: 188px;
-   padding-top: 188px;
-  
+  background-image: linear-gradient(  
+    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
+    ),
+   url(../images/office.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+   padding-bottom:188px;
+   padding-top:188px;
 }
 
 .hero-text {
@@ -269,6 +274,7 @@ border:0;
    
 
 .team-pretext {
+  
   text-align: center;
   margin-bottom: 8px;
   font-weight: 500;
@@ -280,9 +286,36 @@ border:0;
 }
 .team-text {
   text-align: center;
+ margin-bottom: 8px;
   
 }
-  
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-list-item {
+  width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-logo);
+      }
+      .team-soc-icon{
+      fill: var(--color-background-cards);
+      }
+
+  .team-soc-link:hover,
+  .team-soc-link:focus{
+    background-color: var(--color-accent);
+  }
 
 
 /*---Footer---*/
@@ -404,6 +437,7 @@ padding-right: 16px;
   background-color: var(--color-background-dark);
   padding-bottom: 100px;
   padding-top: 100px;
+  display: flex;
 }
 
 .footer-text {
@@ -413,4 +447,45 @@ padding-right: 16px;
   color: var(--color-btn-footer-light);
   max-width: 264px;
   margin-top: 16px;
+  
 }
+.footer-soc{
+  
+
+}
+
+.footer-title{
+  
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--color-background-white);
+margin-bottom: 16px;
+
+
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-list-item {
+  display: flex;
+  gap: 16px;
+}
+.footer-soc-link {
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+background: rgba(255, 255, 255, 0.1);
+
+}
+.footer-soc-link:hover{
+background: var(--color-accent-soc) ;
+}
+
