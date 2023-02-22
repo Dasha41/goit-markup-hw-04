@@ -406,9 +406,10 @@ margin-bottom: 72px;
      
   }
   .customers-icon:{
-    fill: var(--color-accent-customers);
-
+    fill: currentColor;
+   
   }
+
   
   .customers-link:is(:hover,:focus){
   border-color: var(--color-accent);
