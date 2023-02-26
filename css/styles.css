@@ -405,8 +405,8 @@ margin-bottom: 72px;
    
      
   }
-  .customers-icon:{
-    fill: currentColor;
+  .customers-icon{
+    fill:var(--color-accent-customers);
    
   }
 
